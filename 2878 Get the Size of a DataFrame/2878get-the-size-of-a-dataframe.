@@ -1,0 +1,8 @@
+import pandas as pd
+
+def getDataframeSize(players: pd.DataFrame) -> List[int]:
+    size=[]
+    row, col = players.shape
+    size.append(row)
+    size.append(col)
+    return size
